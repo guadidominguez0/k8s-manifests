@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debug-pod
+spec:
+  containers:
+    - name: debug-container
+      image: busybox
+      command: [ "sleep", "3600" ]
+      volumeMounts:
+        - name: static-content
+          mountPath: /mnt/test
+  volumes:
+    - name: static-content
+      hostPath:
+        path: /mnt/static
+        type: Directory
