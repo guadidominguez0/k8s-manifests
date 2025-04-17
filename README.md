@@ -45,9 +45,9 @@ mkdir 0311AT
 
 cd 0311AT
 
-git clone https://github.com/guadi-dominguez/static-website.git
+git clone https://github.com/guadidominguez0/static-website.git
 
-git clone https://github.com/guadi-dominguez/k8s-manifests.git
+git clone https://github.com/guadidominguez0/k8s-manifests.git
 
 
 3. Iniciar Minikube con el Volumen montado
