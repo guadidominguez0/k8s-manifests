@@ -59,6 +59,8 @@ minikube start --mount --mount-string="C:/0311AT/static-website:/mnt/static"
 
 4. Aplica los manifiestos
 
+cd "C:/0311AT/k8s-manifests"
+
 kubectl apply -f volume/pv.yaml
 
 kubectl apply -f deployment/deployment.yaml
